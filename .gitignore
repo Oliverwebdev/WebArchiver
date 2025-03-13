@@ -1,0 +1,56 @@
+# Python bytecode und cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtuelle Umgebungen
+venv/
+env/
+ENV/
+
+# IDE-Dateien
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Lokale Konfigurationsdateien
+config.json
+session.json
+
+# SQLite Datenbank
+websites.db
+*.db
+*.db-journal
+
+# Gespeicherte Websites
+saved_websites/
+
+# Logs und temporäre Dateien
+*.log
+.DS_Store
+Thumbs.db
+temp_*/
+
+# Selenium und Browser-Treiber
+geckodriver.log
+chromedriver.log
+drivers/
+*.crx
+
+# Exportierte Zip-Dateien
+*.zip
+
+# PyInstaller
+*.spec
+
+# Tutorial und Dokumentationsautogeneriert 
+docs/_build/
