@@ -20,6 +20,29 @@ try:
 except ImportError:
     PLAYWRIGHT_AVAILABLE = False
 
+import os
+import sys
+import shutil
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+    QLabel, QTabWidget, QPushButton, QLineEdit, QMessageBox,
+    QComboBox, QCheckBox, QScrollArea, QPlainTextEdit, QRadioButton,
+    QGroupBox, QGridLayout, QProgressBar, QFileDialog, QStatusBar,
+    QFrame, QSpacerItem, QSizePolicy, QSpinBox
+)
+from PyQt6.QtGui import QPixmap, QFont
+
+from .editor_dialog import WebsiteEditorDialog
+from session_manager import SessionManager
+from scraper import WebArchiver
+
+try:
+    from playwright.sync_api import sync_playwright
+    PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    PLAYWRIGHT_AVAILABLE = False
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -45,6 +68,42 @@ class MainWindow(QMainWindow):
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
         main_layout = QVBoxLayout(central_widget)
+        
+        # Add logo at the top
+        logo_layout = QHBoxLayout()
+        main_layout.addLayout(logo_layout)
+        
+        # Add a spacer on the left
+        logo_layout.addStretch(1)
+        
+        # Add logo image
+        logo_label = QLabel()
+        logo_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "WebArchiver.jpg")
+        if os.path.exists(logo_path):
+            logo_pixmap = QPixmap(logo_path)
+            # Scale the logo to an appropriate size (e.g., 150px wide, keeping aspect ratio)
+            logo_pixmap = logo_pixmap.scaledToWidth(150, Qt.TransformationMode.SmoothTransformation)
+            logo_label.setPixmap(logo_pixmap)
+            logo_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            logo_layout.addWidget(logo_label)
+        
+        # Add app title next to the logo
+        title_label = QLabel("Website Archiver")
+        title_font = QFont()
+        title_font.setPointSize(16)
+        title_font.setBold(True)
+        title_label.setFont(title_font)
+        title_label.setAlignment(Qt.AlignmentFlag.AlignVCenter)
+        logo_layout.addWidget(title_label)
+        
+        # Add a spacer on the right
+        logo_layout.addStretch(1)
+        
+        # Add a horizontal separator
+        separator = QFrame()
+        separator.setFrameShape(QFrame.Shape.HLine)
+        separator.setFrameShadow(QFrame.Shadow.Sunken)
+        main_layout.addWidget(separator)
         
         self.tabs = QTabWidget()
         main_layout.addWidget(self.tabs, 1)

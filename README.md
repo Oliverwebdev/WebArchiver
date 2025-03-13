@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Website Archiver Logo](https://via.placeholder.com/200x200?text=Website+Archiver)
+<img src="WebArchiver.jpg" alt="Website Archiver Logo" width="300"/>
 
 **Preserve, manage, and customize web content offline with this powerful archiving tool.**
 
@@ -23,6 +23,18 @@
 - **✏️ Built-in Editor** - Modify archived content directly within the application
 - **📦 Import/Export** - Share your archives with others or back them up securely
 
+## 📸 Screenshots
+
+<div align="center">
+<img src="https://via.placeholder.com/800x450?text=Main+Window" alt="Main Window" width="80%"/>
+<p><em>Home screen displaying archived websites with tag filtering</em></p>
+
+<img src="https://via.placeholder.com/800x450?text=Website+Editor" alt="Website Editor" width="80%"/>
+<p><em>Built-in editor for customizing saved content</em></p>
+
+<img src="https://via.placeholder.com/800x450?text=Download+Options" alt="Download Options" width="80%"/>
+<p><em>Advanced download options for perfect website captures</em></p>
+</div>
 
 ## 🔧 Installation
 
@@ -131,7 +143,7 @@ Want to contribute to Website Archiver? Great! We welcome contributions of all k
 ### Setting Up Development Environment
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/Oliverwebdev/WebArchiver
+2. Clone your fork: `git clone `https://github.com/Oliverwebdev/WebArchiver
 3. Create a virtual environment: `python -m venv venv`
 4. Activate it and install dev dependencies: `pip install -r requirements-dev.txt`
 5. Make your changes and submit a pull request!
