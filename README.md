@@ -23,18 +23,6 @@
 - **✏️ Built-in Editor** - Modify archived content directly within the application
 - **📦 Import/Export** - Share your archives with others or back them up securely
 
-## 📸 Screenshots
-
-<div align="center">
-<img src="https://via.placeholder.com/800x450?text=Main+Window" alt="Main Window" width="80%"/>
-<p><em>Home screen displaying archived websites with tag filtering</em></p>
-
-<img src="https://via.placeholder.com/800x450?text=Website+Editor" alt="Website Editor" width="80%"/>
-<p><em>Built-in editor for customizing saved content</em></p>
-
-<img src="https://via.placeholder.com/800x450?text=Download+Options" alt="Download Options" width="80%"/>
-<p><em>Advanced download options for perfect website captures</em></p>
-</div>
 
 ## 🔧 Installation
 
@@ -58,7 +46,7 @@ website-archiver
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/website-archiver.git
+git clone https://github.com/Oliverwebdev/WebArchiver
 cd website-archiver
 
 # Create and activate virtual environment (recommended)
@@ -143,7 +131,7 @@ Want to contribute to Website Archiver? Great! We welcome contributions of all k
 ### Setting Up Development Environment
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/your-username/website-archiver.git`
+2. Clone your fork: `git clone https://github.com/Oliverwebdev/WebArchiver
 3. Create a virtual environment: `python -m venv venv`
 4. Activate it and install dev dependencies: `pip install -r requirements-dev.txt`
 5. Make your changes and submit a pull request!
@@ -168,13 +156,6 @@ If you find Website Archiver useful, please consider:
 - Contributing code or documentation improvements
 - Sharing the project with others
 
-## 📬 Contact
-
-- GitHub Issues: [https://github.com/yourusername/website-archiver/issues](https://github.com/yourusername/website-archiver/issues)
-- Email: your.email@example.com
-- Twitter: [@YourHandle](https://twitter.com/YourHandle)
-
----
 
 <div align="center">
 <p><strong>Website Archiver</strong> - Because the web is too important to lose.</p>
