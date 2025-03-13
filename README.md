@@ -23,19 +23,6 @@
 - **✏️ Built-in Editor** - Modify archived content directly within the application
 - **📦 Import/Export** - Share your archives with others or back them up securely
 
-## 📸 Screenshots
-
-<div align="center">
-<img src="https://via.placeholder.com/800x450?text=Main+Window" alt="Main Window" width="80%"/>
-<p><em>Home screen displaying archived websites with tag filtering</em></p>
-
-<img src="https://via.placeholder.com/800x450?text=Website+Editor" alt="Website Editor" width="80%"/>
-<p><em>Built-in editor for customizing saved content</em></p>
-
-<img src="https://via.placeholder.com/800x450?text=Download+Options" alt="Download Options" width="80%"/>
-<p><em>Advanced download options for perfect website captures</em></p>
-</div>
-
 ## 🔧 Installation
 
 ### Prerequisites
